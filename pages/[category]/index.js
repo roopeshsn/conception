@@ -8,9 +8,6 @@ import {
 } from "../../lib/mdx-processor";
 
 export default function index({ files: ideas }) {
-  const router = useRouter();
-  // console.log(ideas);
-  const category = router.query.category;
   return (
     <div>
       <CategoryPage ideas={ideas} />
