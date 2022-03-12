@@ -7,3 +7,5 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+// Production branch = mdx-version
