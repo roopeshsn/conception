@@ -13,28 +13,20 @@ export default function idea({ mdxSource }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = await getFileByIdea("app-ideas", `${params.idea}.mdx`);
-  console.log(post);
+  const post = await getFileByIdea(params.category, `${params.idea}.mdx`);
   return {
     props: post,
   };
 }
 
 export async function getStaticPaths() {
-  const posts = await getFiles("app-ideas");
-  const some = posts.map((post) => ({
-    params: {
-      idea: post.replace(/\.mdx/, ""),
-      category: "app-ideas",
-    },
-  }));
-  console.log(some);
-
+  const files = await getFiles();
+  console.log(files);
   return {
-    paths: posts.map((post) => ({
+    paths: files.map((file) => ({
       params: {
-        idea: post.replace(/\.mdx/, ""),
-        category: "app-ideas",
+        idea: file.file.replace(/\.mdx/, ""),
+        category: file.folderName,
       },
     })),
     fallback: false,
