@@ -1,13 +1,16 @@
 import { MDXRemote } from "next-mdx-remote";
 import React from "react";
+import IdeaPage from "../../Components/IdeaPage";
 import MdxComponents from "../../Components/MdxComponents";
 import { getFileByIdea, getFiles } from "../../lib/mdx-processor";
 
 export default function idea({ mdxSource }) {
-  console.log(mdxSource.frontmatter);
+  // console.log(mdxSource.frontmatter);
   return (
     <div>
-      <MDXRemote {...mdxSource} components={MdxComponents} />
+      <IdeaPage>
+        <MDXRemote {...mdxSource} components={MdxComponents} />
+      </IdeaPage>
     </div>
   );
 }
@@ -21,7 +24,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const files = await getFiles();
-  console.log(files);
+  // console.log(files);
   return {
     paths: files.map((file) => ({
       params: {
