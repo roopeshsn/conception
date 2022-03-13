@@ -1,4 +1,5 @@
 import {
+  Box,
   Center,
   Container,
   Grid,
@@ -9,12 +10,13 @@ import {
 import React from "react";
 import Navbar from "./Navbar";
 import Link from "next/link";
+import Contribution from "./Contribution";
 
 export default function HomePage({ categories }) {
   return (
     <Container maxW='container.md'>
       <Navbar />
-      <Grid px={2} py={2} templateColumns='repeat(2, 1fr)' gap={4}>
+      <Grid py={6} templateColumns='repeat(2, 1fr)' gap={4}>
         {categories.map((category) => {
           return (
             <GridItem
@@ -26,17 +28,22 @@ export default function HomePage({ categories }) {
               color='white'
               borderRadius={8}
             >
-              <Link href={`/${category.href}`} passHref>
-                <ChakraLink>
-                  <Text fontSize={{ base: "20px", md: "24px" }}>
-                    {category.title}
-                  </Text>
-                </ChakraLink>
-              </Link>
+              <Box>
+                <Center>
+                  <Link href={`/${category.href}`} passHref>
+                    <ChakraLink>
+                      <Text fontSize={{ base: "20px", md: "24px" }}>
+                        {category.title}
+                      </Text>
+                    </ChakraLink>
+                  </Link>
+                </Center>
+              </Box>
             </GridItem>
           );
         })}
       </Grid>
+      <Contribution />
     </Container>
   );
 }

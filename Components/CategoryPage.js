@@ -3,6 +3,7 @@ import {
   Container,
   Flex,
   Img,
+  Button,
   Text,
   Link as ChakraLink,
   Divider,
@@ -10,13 +11,18 @@ import {
 import React from "react";
 import Navbar from "./Navbar";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function CategoryPage({ ideas }) {
+  const router = useRouter();
   return (
     <Container maxW='container.md'>
       <Navbar />
-      <Box px={2} py={2}>
+      <Box py={4}>
+        <Button size='sm' onClick={() => router.push("/")}>
+          Back to the collection
+        </Button>
         {ideas.map((idea) => {
           return (
             <Box key={idea.title}>

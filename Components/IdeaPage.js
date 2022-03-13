@@ -1,4 +1,4 @@
-import { Button, Container } from "@chakra-ui/react";
+import { Box, Button, Container } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React from "react";
 import Navbar from "./Navbar";
@@ -8,14 +8,15 @@ export default function IdeaPage({ children }) {
   return (
     <Container maxW='container.md'>
       <Navbar />
-
-      <Button
-        size='sm'
-        onClick={() => router.push(`/${router.query.category}`)}
-      >
-        Back
-      </Button>
-      {children}
+      <Box my={4}>
+        <Button
+          size='sm'
+          onClick={() => router.push(`/${router.query.category}`)}
+        >
+          {`Back to a list of ${router.query.category}`}
+        </Button>
+        {children}
+      </Box>
     </Container>
   );
 }
