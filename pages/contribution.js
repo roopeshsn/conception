@@ -17,8 +17,8 @@ export default function contribution() {
         </Text>
         <Text mt={2}>
           To use MDX with Next.js we use a plugin library called
-          next-mdx-remote. Yeah, you're right! All of the content is also be a
-          part in version control (Git and Github)
+          next-mdx-remote. Yeah, you&apos;re right! All of the content is also
+          be a part in version control (Git and Github)
         </Text>
         <Text mt={2}>
           So, you can fork our repo, clone it on your local machine and add your
