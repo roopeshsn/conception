@@ -1,5 +1,3 @@
-import { Flex, Text } from "@chakra-ui/react";
-import { useRouter } from "next/router";
 import React from "react";
 import CategoryPage from "../../Components/CategoryPage";
 import {
@@ -27,7 +25,7 @@ export async function getStaticPaths() {
   return {
     paths: categories.map((category) => ({
       params: {
-        category: category.title,
+        category: category.href,
       },
     })),
     fallback: false,

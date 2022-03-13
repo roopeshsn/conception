@@ -1,7 +1,8 @@
 import Head from "next/head";
 import HomePage from "../Components/HomePage";
+import { getAllCategory } from "../lib/mdx-processor";
 
-export default function Home() {
+export default function Home({ categories }) {
   return (
     <div>
       <Head>
@@ -9,7 +10,14 @@ export default function Home() {
         <meta name='description' content='Conceptions you need' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <HomePage />
+      <HomePage categories={categories} />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const categories = await getAllCategory();
+  return {
+    props: { categories },
+  };
 }

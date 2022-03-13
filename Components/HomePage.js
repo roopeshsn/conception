@@ -9,9 +9,8 @@ import {
 import React from "react";
 import Navbar from "./Navbar";
 import Link from "next/link";
-import categories from "../db/categories";
 
-export default function HomePage() {
+export default function HomePage({ categories }) {
   return (
     <Container maxW='container.md'>
       <Navbar />
@@ -20,7 +19,7 @@ export default function HomePage() {
           return (
             <GridItem
               h='100px'
-              key={category.key}
+              key={category.title}
               bg='tomato'
               px={2}
               py={2}

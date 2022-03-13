@@ -21,7 +21,7 @@ export default function CategoryPage({ ideas }) {
           return (
             <Box key={idea.title}>
               <Flex justify='space-between' align='center' my={4} gap={2}>
-                <Flex direction='column'>
+                <Flex direction='column' flexGrow={1}>
                   <Link
                     href={`/${idea.category}/${idea.fileName.replace(
                       /\.mdx/,
@@ -35,21 +35,25 @@ export default function CategoryPage({ ideas }) {
                       </Text>
                     </ChakraLink>
                   </Link>
-                  <Text my={2} fontSize={{ base: "16px", md: "16px" }}>
+                  <Text
+                    my={2}
+                    fontSize={{ base: "16px", md: "16px" }}
+                    noOfLines={[1, 1]}
+                  >
                     {idea.summary}
                   </Text>
                   <Text mt={1} fontSize={{ base: "12px", md: "14px" }}>
                     {idea.category}
                   </Text>
                 </Flex>
-                <Box>
+                {/* <Flex>
                   <Image
                     src='https://via.placeholder.com/150'
                     width={150}
                     height={150}
                     alt={`${idea.title}`}
                   ></Image>
-                </Box>
+                </Flex> */}
               </Flex>
               <Divider orientation='horizontal' />
             </Box>
