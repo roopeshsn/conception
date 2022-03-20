@@ -77,7 +77,11 @@ export default function CategoryPage({ ideas: inIdeas }) {
                         passHref
                       >
                         <ChakraLink>
-                          <Text as='h2' fontSize={{ base: "20px", md: "32px" }}>
+                          <Text
+                            as='h2'
+                            fontSize={{ base: "20px", md: "26px" }}
+                            fontWeight='semibold'
+                          >
                             {idea.title}
                           </Text>
                         </ChakraLink>
