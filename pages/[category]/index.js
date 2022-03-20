@@ -6,6 +6,7 @@ import {
 } from "../../lib/mdx-processor";
 
 export default function index({ files: ideas }) {
+  console.log(ideas);
   return (
     <div>
       <CategoryPage ideas={ideas} />

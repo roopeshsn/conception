@@ -48,9 +48,20 @@ export default function CategoryPage({ ideas }) {
                   >
                     {idea.summary}
                   </Text>
-                  <Text mt={1} fontSize={{ base: "12px", md: "14px" }}>
-                    {idea.category}
-                  </Text>
+                  <Flex mt={1}>
+                    <Text fontSize={{ base: "12px", md: "14px" }}>
+                      {idea.category}
+                    </Text>
+                    {idea.tags.map((tag) => (
+                      <Text
+                        ml={1}
+                        key={tag}
+                        fontSize={{ base: "12px", md: "14px" }}
+                      >
+                        {tag}
+                      </Text>
+                    ))}
+                  </Flex>
                 </Flex>
                 {/* <Flex>
                   <Image
