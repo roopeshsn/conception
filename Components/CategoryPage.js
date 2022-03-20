@@ -46,7 +46,7 @@ export default function CategoryPage({ ideas: inIdeas }) {
         <Button size='sm' onClick={() => router.push("/")}>
           Back to the collection
         </Button>
-        <Box my={4}>
+        <Box mt={4}>
           {uniqueTags.map((tag) => {
             return (
               <Button
@@ -62,7 +62,7 @@ export default function CategoryPage({ ideas: inIdeas }) {
             );
           })}
         </Box>
-        <Box>
+        <Box mt={8}>
           {filteredIdeas &&
             filteredIdeas.map((idea) => {
               return (
@@ -99,6 +99,7 @@ export default function CategoryPage({ ideas: inIdeas }) {
                           {idea.tags.map((tag) => (
                             <Tag
                               ml={1}
+                              mt={1}
                               key={tag}
                               fontSize={{ base: "12px", md: "14px" }}
                             >

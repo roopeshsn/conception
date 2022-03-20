@@ -14,14 +14,14 @@ export default function IdeaPage({ children }) {
   return (
     <Container maxW='container.md'>
       <Navbar />
-      <Box mt={4} mb={8}>
+      <Box mt={4}>
         <Button
           size='sm'
           onClick={() => router.push(`/${router.query.category}`)}
         >
           {`Back to a list of ${router.query.category}`}
         </Button>
-        <Box>{children}</Box>
+        <Box mt={8}>{children}</Box>
         <Box>
           <Text display='inline'>Tags: </Text>
           <Box display='inline'>
