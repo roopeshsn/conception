@@ -38,8 +38,12 @@ The newly created md file has frontmatter information, which is used for static 
 
 After writing your idea, you can raise a pull request.
 
+If you've never submitted a pull request before then I would recommend you check out this guide: [Step-by-step guide to contributing on GitHub](https://www.dataschool.io/how-to-contribute-on-github/)
+
 ## Contributing Code
 
 This you already know. Work on the issues and raise a pull request. Before submitting a PR that relates directly to an issue, please write a comment on the relevant issue letting me know you'd like to take it on.
 
 Pull requests big or small will be accepted, however, if you are submitting a major feature then please make sure you create an issue for discussion before attempting this work, likewise if you spot a bug please raise a new issue before creating a pull request.
+
+If you've never submitted a pull request before then I would recommend you check out this guide: [Step-by-step guide to contributing on GitHub](https://www.dataschool.io/how-to-contribute-on-github/)
