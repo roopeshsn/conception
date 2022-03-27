@@ -2,14 +2,14 @@ import { Box, Button, Container, Tag, Text } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React from "react";
 import Navbar from "./Navbar";
+import formatStringToArray from "../utils/formatStringToArray";
 
 export default function IdeaPage({ children }) {
   const router = useRouter();
 
-  // Processing tags to render it on single idea post page at the bottom
   let tagsString = children.props.frontmatter.tags;
-  let tags = tagsString.split(",");
-  let formattedTags = tags.map((tag) => tag.trim());
+  console.log(children.props.frontmatter);
+  const formattedTags = formatStringToArray(tagsString);
 
   return (
     <Container maxW='container.md'>
