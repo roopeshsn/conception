@@ -27,6 +27,7 @@ npm run plop
 This will be prompted to enter some necessary informations:
 
 - title
+- slug
 - summary
 - category
 - tags
