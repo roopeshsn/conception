@@ -8,7 +8,6 @@ export default function IdeaPage({ children }) {
   const router = useRouter();
 
   let tagsString = children.props.frontmatter.tags;
-  console.log(children.props.frontmatter);
   const formattedTags = formatStringToArray(tagsString);
 
   return (

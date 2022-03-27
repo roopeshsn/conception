@@ -15,6 +15,11 @@ function plopfile(plop) {
         },
         {
           type: "input",
+          name: "slug",
+          message: "Slug (This will be used as a filename):",
+        },
+        {
+          type: "input",
           name: "summary",
           message: "Summary of idea:",
         },
@@ -37,7 +42,7 @@ function plopfile(plop) {
       actions: [
         {
           type: "add",
-          path: `db/all-ideas/{{dashCase category}}/{{dashCase title}}.mdx`,
+          path: `db/all-ideas/{{dashCase category}}/{{dashCase slug}}.mdx`,
           templateFile: "plop-templates/idea-post.hbs",
         },
       ], // array of actions
