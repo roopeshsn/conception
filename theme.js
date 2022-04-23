@@ -14,6 +14,11 @@ const overrides = {
   },
 };
 
-const theme = extendTheme(overrides);
+const config = {
+  initialColorMode: "light",
+  useSystemColorMode: false,
+};
+
+const theme = extendTheme({overrides, config});
 
 export default theme;

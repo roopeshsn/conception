@@ -1,8 +1,11 @@
 import React from "react";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { useColorModeValue, useColorMode } from "@chakra-ui/color-mode";
 
 export default function Contribution() {
+  const {toggleColoreMode} = useColorMode();
+  const color = useColorModeValue('black', 'black');
   const router = useRouter();
   return (
     <>
@@ -14,10 +17,10 @@ export default function Contribution() {
           px={6}
           py={4}
         >
-          <Text fontSize={{ base: "20px", md: "28px" }} fontWeight='medium'>
+          <Text fontSize={{ base: "20px", md: "28px" }} fontWeight='medium' color={color}>
             Want to Contribute?
           </Text>
-          <Text>
+          <Text color={color}>
             Share you Ideas to the whole community by writing your ideas in
             Markdown
           </Text>
