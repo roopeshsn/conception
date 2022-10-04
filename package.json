@@ -15,6 +15,7 @@
     "@chakra-ui/react": "^1.8.6",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
+    "@fontsource/league-spartan": "^4.5.12",
     "framer-motion": "^6.2.8",
     "gray-matter": "^4.0.3",
     "next": "12.1.0",

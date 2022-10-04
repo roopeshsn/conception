@@ -1,6 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const overrides = {
+  fonts: {
+    heading: `'League Spartan', sans-serif`,
+    body: `sans-serif`
+  },
   fontWeights: {
     hairline: 100,
     thin: 200,
