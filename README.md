@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ### An Idea Sharing Platform
 
+![homepage-conception](https://user-images.githubusercontent.com/70762571/167148564-eb66f324-e479-450b-a2e9-d699e77ab065.png)
+
 Collection of Ideas on every niche
 
 ## Project Purpose
