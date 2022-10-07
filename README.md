@@ -1,12 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 # Conception
 
-### An Idea Sharing Platform
+Conception is an Idea sharing platform where you can find ideas on every niche. The best part is you can share your ideas through a PR.
 
 ![homepage-conception](https://user-images.githubusercontent.com/70762571/167148564-eb66f324-e479-450b-a2e9-d699e77ab065.png)
-
-Collection of Ideas on every niche
 
 ## Project Purpose
 
@@ -26,13 +22,38 @@ In future, Conception supports Strapi (Headless CMS) to write your ideas.
 
 ## Getting Started
 
-### Project setup on your local machine
+### Setting up the repository
 
-The easiest and quickest way to get the default project up and running locally is to clone the repo:
+Fork the repository at - [roopeshsn/conception](https://github.com/roopeshsn/conception) to your GitHub account.
+
+Then clone the forked repository, by typing the following line in your local terminal/powershell. Remember to replace `<your-username>` with your actual GitHub username.
 
 ```bash
-git clone https://github.com/roopeshsn/conception.git
+git clone https://github.com/<your-username>/conception.git
 ```
+
+Navigate to the cloned repository on your local system
+
+```bash
+cd conception
+```
+
+Add remotes to the parent repository. This will help you fetch the code from the
+parent repo to avoid any merge conflicts later.
+
+```bash
+git remote add upstream https://github.com/roopeshsn/conception.git
+```
+
+To verify, use the command `git remote -v` to check if you have two remotes - origin and upstream set up.
+
+Finally, fetch the upstream's latest code from the `mdx-version` branch. Note that `mdx-version` is the default main branch.
+
+```bash
+git fetch upstream mdx-version
+```
+
+### Next steps
 
 Now install packages with NPM:
 
@@ -51,21 +72,6 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## API Information
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Contributing
 
