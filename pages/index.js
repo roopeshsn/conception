@@ -8,7 +8,7 @@ export default function Home({ categories }) {
       <Head>
         <title>Conception</title>
         <meta name="description" content="Conceptions you need" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/c-logo.ico" />
       </Head>
       <HomePage categories={categories} />
     </div>
