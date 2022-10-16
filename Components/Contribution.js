@@ -25,7 +25,7 @@ export default function Contribution() {
             Want to Contribute?
           </Text>
           <Text color={color}>
-            Share you Ideas to the whole community by writing your ideas in
+            Share your Ideas to the whole community by writing your ideas in the
             Markdown
           </Text>
           <Box my={4}>
