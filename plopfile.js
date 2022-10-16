@@ -1,9 +1,9 @@
 function plopfile(plop) {
-  const { getAllCategories } = require("./utils/filesystem");
-  const date = new Date(Date.now());
-  let categories = getAllCategories();
+  const { getAllCategories } = require("./utils/filesystem")
+  const date = new Date(Date.now())
+  let categories = getAllCategories()
   plop.setHelper("createdAt", () => {
-    return date.toString();
+    return date.toString()
   }),
     plop.setGenerator("newIdea", {
       description: "generate new idea post",
@@ -46,7 +46,7 @@ function plopfile(plop) {
           templateFile: "plop-templates/idea-post.hbs",
         },
       ], // array of actions
-    });
+    })
 }
 
-module.exports = plopfile;
+module.exports = plopfile
