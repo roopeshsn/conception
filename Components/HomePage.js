@@ -6,26 +6,27 @@ import {
   GridItem,
   Link as ChakraLink,
   Text,
-} from "@chakra-ui/react";
-import React from "react";
-import Navbar from "./Navbar";
-import Link from "next/link";
-import Contribution from "./Contribution";
+} from "@chakra-ui/react"
+import React from "react"
+import Navbar from "./Navbar"
+import Link from "next/link"
+import Contribution from "./Contribution"
+import { Footer } from "./Footer"
 
 export default function HomePage({ categories }) {
   return (
-    <Container maxW='container.md'>
+    <Container maxW="container.md">
       <Navbar />
-      <Grid py={6} templateColumns='repeat(2, 1fr)' gap={4}>
+      <Grid py={6} templateColumns="repeat(2, 1fr)" gap={4}>
         {categories.map((category) => {
           return (
             <GridItem
-              h='100px'
+              h="100px"
               key={category.title}
-              bg='tomato'
+              bg="tomato"
               px={2}
               py={2}
-              color='white'
+              color="white"
               borderRadius={8}
             >
               <Box>
@@ -40,10 +41,11 @@ export default function HomePage({ categories }) {
                 </Center>
               </Box>
             </GridItem>
-          );
+          )
         })}
       </Grid>
       <Contribution />
+      <Footer />
     </Container>
-  );
+  )
 }
