@@ -1,13 +1,14 @@
-import { Box, Button, Container, Heading, Text } from "@chakra-ui/react";
-import React from "react";
-import Navbar from "../Components/Navbar";
+import { Box, Button, Container, Heading, Text } from "@chakra-ui/react"
+import React from "react"
+import { Footer } from "../Components/Footer"
+import Navbar from "../Components/Navbar"
 
 export default function contribution() {
   return (
-    <Container maxW='container.md'>
+    <Container maxW="container.md">
       <Navbar />
       <Box my={4}>
-        <Heading fontWeight='medium' fontSize={{ base: "24px", md: "32px" }}>
+        <Heading fontWeight="medium" fontSize={{ base: "24px", md: "32px" }}>
           Contribute to Conception
         </Heading>
         <Text mt={4}>
@@ -27,13 +28,14 @@ export default function contribution() {
         </Text>
         <Button
           my={6}
-          as='a'
-          target='_blank'
-          href='https://github.com/roopeshsn/conception'
+          as="a"
+          target="_blank"
+          href="https://github.com/roopeshsn/conception"
         >
           Start Contributing
         </Button>
       </Box>
+      <Footer />
     </Container>
-  );
+  )
 }
