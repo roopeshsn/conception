@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     domains: ["via.placeholder.com"],
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
 
 // Production branch = mdx-version

@@ -9,6 +9,6 @@ const categories = [
     title: "College Project Ideas",
     href: "college-project-ideas",
   },
-];
+]
 
-export default categories;
+export default categories

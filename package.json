@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "plop": "plop"
+    "plop": "plop",
+    "prettier": "prettier --write **/*.js"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
@@ -32,6 +33,7 @@
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
     "jest": "^27.5.1",
-    "plop": "^3.0.5"
+    "plop": "^3.0.5",
+    "prettier": "^2.7.1"
   }
 }
