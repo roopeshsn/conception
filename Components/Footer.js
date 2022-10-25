@@ -11,9 +11,8 @@ import { FaGithub } from "react-icons/fa"
 
 export const Footer = () => {
   return (
-    <Box as="footer" role="contentinfo" py={{ base: "12", md: "16" }}>
-      <Divider />
-      <Stack mt={4} justify="space-between" direction="row" align="center">
+    <Box as="footer" role="contentinfo" pt={{ base: "12", md: "16" }} pb={{base: "6", md: "8"}}>
+      <Stack justify="space-between" direction="row" align="center">
         <Text fontSize="sm" color="subtle">
           Copyright &copy; {new Date().getFullYear()} Conception
         </Text>
