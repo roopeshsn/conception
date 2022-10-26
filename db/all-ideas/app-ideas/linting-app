@@ -1,0 +1,22 @@
+---
+title: Create a linting app
+createdAt: Saturday, October 26, 2022 12:22:14 PM (Eastern Standard Time)
+category: app-ideas
+summary: Create an app or website which allows users to lint and/or format code to a specific standard. 
+tags: windows, linux, mac
+author: Adam Awany
+---
+
+# Create a Linting App
+
+## A cross-platform linting app that allows users to lint and formt their code 
+
+It is an app where users can upload a file or directory of files to be formatted
+
+The app will automate such processes as running python-Black, lint, Prettier, or any other code formatter/linter
+
+Users can use a dropdown menu to select from a number of different styles or formats
+
+The app will then enforce the chosen styles onto the files uploaded
+
+If any errors or conflicts between styles occur, user will be prompted to choose one, similar to resolving a merge conflict
