@@ -4,24 +4,32 @@ import {
   Flex,
   Heading,
   Link as ChakraLink,
-  Button,
+  Switch,
+  Text
 } from "@chakra-ui/react"
 import { useColorMode } from "@chakra-ui/color-mode"
 import Link from "next/link"
 
 export default function Navbar() {
-  const { toggleColorMode } = useColorMode()
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Box>
-      <Flex justify="space-between" align="center" py={4}>
-        <Heading fontSize="3xl" fontWeight={500}>
+    <Box pb={8}>
+      <Flex justify="space-between" align="center" pt={1} pb={8}>
+        <Heading>
           <Link href={`/`} passHref>
-            <ChakraLink>Conception</ChakraLink>
+            <ChakraLink fontSize={18} textTransform="uppercase" fontWeight={700}>Conception</ChakraLink>
           </Link>
         </Heading>
-        <Button size="sm" color="gray.500" onClick={toggleColorMode}>
-          Switch Theme
-        </Button>
+        <Flex fontSize={14} direction='row' align="center">
+          <Text>Light</Text>
+          <Box mx={2}>
+            <Switch colorScheme='brand' size='lg'
+              isChecked ={colorMode === 'light' ? false : true}
+              onChange={toggleColorMode}
+              />
+          </Box>
+          <Text>Dark</Text>
+        </Flex>
       </Flex>
     </Box>
   )

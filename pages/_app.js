@@ -1,7 +1,7 @@
-import "@fontsource/league-spartan"
-import { ChakraProvider } from "@chakra-ui/react"
-import "../styles/globals.css"
-import theme from "../theme"
+import { ChakraProvider } from "@chakra-ui/react";
+import "@fontsource/plus-jakarta-sans";
+import "../styles/globals.css";
+import theme from "../theme";
 
 function MyApp({ Component, pageProps }) {
   return (
