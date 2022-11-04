@@ -12,7 +12,7 @@ export default function IdeaPage({ children }) {
   const formattedTags = formatStringToArray(tagsString)
 
   return (
-    <Container maxW="container.md">
+    <Container maxW="container.lg">
       <Navbar />
       <Box mt={4}>
         <Button

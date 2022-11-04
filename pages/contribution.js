@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar"
 
 export default function contribution() {
   return (
-    <Container maxW="container.md">
+    <Container maxW="container.lg">
       <Navbar />
       <Box my={4}>
         <Heading fontWeight="medium" fontSize={{ base: "24px", md: "32px" }}>
