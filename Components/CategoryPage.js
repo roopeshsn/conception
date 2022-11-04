@@ -41,7 +41,7 @@ export default function CategoryPage({ ideas: inIdeas }) {
   }
 
   return (
-    <Container px={6} maxW="container.lg">
+    <Container px={6} maxW="container">
       <Navbar />
       <Box py={4}>
         <Button size="sm" onClick={() => router.push("/")}>
