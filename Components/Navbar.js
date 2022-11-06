@@ -14,11 +14,13 @@ export default function Navbar() {
   return (
     <Box>
       <Flex justify="space-between" align="center" py={4}>
-        <Heading fontSize="3xl" fontWeight={500}>
-          <Link href={`/`} passHref>
-            <ChakraLink>Conception</ChakraLink>
-          </Link>
-        </Heading>
+        <Box>
+          <Heading fontSize="2xl" fontWeight={500}>
+            <Link href={`/`} passHref>
+              <ChakraLink>Conception</ChakraLink>
+            </Link>
+          </Heading>
+        </Box>
         <Button size="sm" color="gray.500" onClick={toggleColorMode}>
           Switch Theme
         </Button>
